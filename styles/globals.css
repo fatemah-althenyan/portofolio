@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'burtons';
+  src: url('../public/Burtons.otf');
+}
+@font-face {
+  font-family: 'courier';
+  src: url('../public/Courier.ttf');
+}
+
