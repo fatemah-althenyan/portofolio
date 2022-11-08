@@ -42,8 +42,8 @@ export default function Home() {
             <h2 className='text-3xl font-burtons sm:text-4xl lg:text-4xl xl:text-4xl'> A Full-Stack JavaScript Developer.</h2>
             <div className='text-lg pt-4 leading-7 text-center sm:text-xl space-y-3'>
               <p> 
-              I am more interested in the front-end side, using HTML, CSS, javascript, and react. also, I have back-end development skills in node.js, express.js, and MongoDB. 
-              I have a passion for design and analysis. 
+              I am more interested in Front-end side, using HTML, CSS, Bootstrap, JavaScript and React.js. also, I have Back-end development skills in Node.js, Express.js, MongoDB, Heroku and Git.
+              I have a passion for design and analysis.
               </p>
               <p className='text-sm sm:text-base'>
               In my free time, you'll find me reading history, psychology or self-help books. Drawing with charcoal. 
