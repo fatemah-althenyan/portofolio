@@ -39,7 +39,7 @@ export default function Home() {
               <h3 className='text-xl sm:text-2xl'>Hi there! I'm </h3>
               <Image src={nameIcon} className={" w-24 sm:w-28"} />
             </div>
-            <h2 className='text-4xl font-burtons'> A Full-Stack JavaScript Developer.</h2>
+            <h2 className='text-4xl font-burtons sm:text-3xl'> A Full-Stack JavaScript Developer.</h2>
             <div className='text-lg pt-4 leading-7 text-center sm:text-xl space-y-3'>
               <p> 
               I am more interested in the front-end side, using HTML, CSS, javascript, and react. also, I have back-end development skills in node.js, express.js, and MongoDB. 
