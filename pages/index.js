@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Fatemah| INFO</title>
-        <meta name="description" content="Fatemah's Protofolio" />
+        <meta name="description" content="Fatemah's Portfolio" />
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main className=' bg-neutral-200 text-gray-800'>
