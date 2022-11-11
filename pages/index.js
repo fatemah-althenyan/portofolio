@@ -40,12 +40,13 @@ export default function Home() {
               <Image src={nameIcon} className={" w-24 sm:w-28"} />
             </div>
             <h2 className='text-3xl font-burtons sm:text-4xl lg:text-4xl xl:text-4xl'> A Full-Stack JavaScript Developer.</h2>
-            <div className='text-lg pt-4 leading-7 text-center sm:text-xl space-y-3'>
+            <div className='text-base pt-4 leading-7 text-center sm:text-lg space-y-3'>
               <p> 
-              I am more interested in Front-end side, using HTML, CSS, Bootstrap, JavaScript and React.js. also, I have Back-end development skills in Node.js, Express.js, MongoDB, Heroku and Git.
-              I have a passion for design and analysis.
+              My focus is on the Front-end side, using HTML, CSS, Bootstrap, JavaScript, and React.js. I also have experience with Node.js, Express.js, MongoDB, Heroku, and Git in the Back-end.
+              Besides, I am passionate about analysis using Microsoft Excel, Alteryx, and Tableau programs. Design creativity in branding, logos, and websites. 
+              Using Photoshop and Illustrator programs.
               </p>
-              <p className='text-sm sm:text-base'>
+              <p className='text-xs sm:text-sm'>
               In my free time, you'll find me reading history, psychology or self-help books. Drawing with charcoal. 
               At gym or walking. Listening to my favorite music or watching an anime.
               </p>  
