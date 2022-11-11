@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main className=' bg-neutral-200 text-gray-800'>
-        <div className='p-12 max-w-md mx-auto sm:max-w-2xl sm:pb-24 lg:max-w-4xl lg:pb-36 xl:max-w-6xl xl:pb-52'>
+        <div className='p-12 max-w-md mx-auto sm:max-w-2xl lg:max-w-4xl lg:pb-36 xl:max-w-6xl xl:pb-44'>
 
           <nav className='flex items-center justify-center gap-8 sm:justify-end border border-b-white'>
             <ul className='flex gap-6 text-xl font-burtons'>
