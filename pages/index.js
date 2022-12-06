@@ -42,7 +42,9 @@ export default function Home() {
             <h2 className='text-3xl font-burtons sm:text-4xl lg:text-4xl xl:text-4xl'> A Full-Stack JavaScript Developer.</h2>
             <div className='text-base pt-4 leading-7 text-center sm:text-lg space-y-3'>
               <p> 
-              My focus is on the Front-end side, using HTML, CSS, Bootstrap, JavaScript, and React.js. I also have experience with Node.js, Express.js, MongoDB, Heroku, and Git in the Back-end.
+              My focus is on the Front-end side, using HTML, CSS, Bootstrap, JavaScript, and React.js. 
+              I also have experience with Node.js, Express.js, MongoDB, Heroku, and Git in the Back-end.
+              <br />
               Besides, I am passionate about analysis using Microsoft Excel, Alteryx, and Tableau programs. Design creativity in branding, logos, and websites. 
               Using Photoshop and Illustrator programs.
               </p>
