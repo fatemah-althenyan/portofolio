@@ -1,46 +1,61 @@
 import Head from 'next/head'
 import Image from "next/image";
+
+import { useState } from 'react';
+
 import nameIcon from '../public/nameIcon.png';
-//simport {CgDarkMode} from "react-icons/cg";
+
+import {CgDarkMode} from "react-icons/cg";
 import {HiDownload} from "react-icons/hi";
 import {TbArrowLoopRight} from "react-icons/tb";
 import {AiOutlineTwitter, AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 
+
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div>
+    <div className={darkMode ? 'dark' : ''}>
       <Head>
         <title>Fatemah| INFO</title>
         <meta name="description" content="Fatemah's Portfolio" />
         <link rel="icon" href="favicon.ico" />
       </Head>
-      <main className=' bg-neutral-200 text-gray-800'>
-        <div className='p-12 max-w-md mx-auto sm:max-w-2xl lg:max-w-4xl lg:pb-36 xl:max-w-6xl xl:pb-44'>
-
-          <nav className='flex items-center justify-center gap-8 sm:justify-end border border-b-white'>
-            <ul className='flex gap-6 text-xl font-burtons'>
-              <li className='line-through'>
+      <main className=' bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-100'>
+        <div className='p-12 max-w-md mx-auto sm:max-w-2xl lg:max-w-4xl lg:pb-32 xl:max-w-6xl xl:pb-44'>
+          
+          {/*PART #1: navigation bar of pages and dark mode feature.*/}
+          <nav className='flex items-center justify-between border border-x-0 border-t-0 border-neutral-700 dark:border-b-white'>
+            <div className='cursor-pointer'>
+              <CgDarkMode onClick={()=> setDarkMode(!darkMode)}/>
+            </div>
+            <ul className='flex gap-6 text-lg font-burtons'>
+              <li className='line-through cursor-pointer'>
                 info
+              </li> {/*show line-through for current page*/}
+              <li className='text-gray-800/50 dark:text-gray-200/50'>
+                  projects<sup className=' text-xs tracking-tighter text-red-800/50 dark:text-red-400/50'>soon</sup>   
               </li>
-              <li className='text-gray-800/50'>
-                  projects<sup className=' text-xs text-red-800/50 tracking-tighter'>soon</sup>   
+              <li className='group relative'> {/*show the resume in two versions*/}
+                <span className='cursor-pointer'> resume<HiDownload className={'inline text-base'} /> </span>
+                <div className='invisible group-hover:visible absolute'>
+                  <ul className='bg-white bg-opacity-50 dark:bg-opacity-20 font-serif text-xs text-center'>
+                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/1BwhY_DZJDWzp5p1s_eDBoI3zxCmDW0Q4/view?usp=sharing' target={'_blank'}>English</a> </li>
+                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/1CzYLwr5iBd4X9EjIhPk9LDSTAbGLHISg/view?usp=sharing' target={'_blank'}>العربية</a> </li>
+                  </ul>
+                </div>    
               </li>
-              <li className='cursor-pointer '> 
-                <a href='https://drive.google.com/file/d/1ifNEc3qdWC4Ra4C62yVFBXljEsWWF2C3/view?usp=sharing' target={'_blank'}>
-                  resume <HiDownload className={'inline'} />
-                </a> 
-              </li>
+
             </ul>
-            { /** <CgDarkMode className={"cursor-pointer text-xl"}/> **/}
           </nav>
 
+          {/*PART #2: the body of name, role, paragraphs, and contact.*/}
           <section className=' mt-12 space-y-3 font-courier sm:mt-20'>
             <div className='flex gap-2 items-center'>
               <h3 className='text-xl sm:text-2xl'>Hi there! I'm </h3>
               <Image src={nameIcon} className={" w-24 sm:w-28"} />
             </div>
-            <h2 className='text-3xl font-burtons sm:text-4xl lg:text-4xl xl:text-4xl'> A Full-Stack JavaScript Developer.</h2>
-            <div className='text-base pt-4 leading-7 text-center sm:text-lg space-y-3'>
+            <h2 className='text-3xl font-burtons sm:text-4xl'> A Full-Stack JavaScript Developer.</h2>
+            <div className='text-base pt-4 leading-7 text-center space-y-3 sm:text-lg'>
               <p> 
               My focus is on the Front-end side, using HTML, CSS, Bootstrap, JavaScript, and React.js. 
               I also have experience with Node.js, Express.js, MongoDB, Heroku, and Git in the Back-end.
@@ -55,14 +70,15 @@ export default function Home() {
             </div>
             <div className='text-lg pt-4 text-cyan-600 lg:text-center xl:text-center'>
                 <TbArrowLoopRight className={'inline'} />
-                <a href="mailto:f.thenyan@gmail.com"> let's keep in touch</a>
+                <a href="mailto:f.thenyan@gmail.com">let's keep in touch..</a>
             </div>
           </section>
 
         </div>
       </main>
 
-      <footer className='flex justify-center gap-24 text-xl py-3 lg:gap-32 xl:gap-40'>
+      {/*PART #3: social media accounts: twitter, linkedin, and github.*/}
+      <footer className='flex justify-center gap-24 text-lg text-neutral-700 py-3 lg:gap-32 xl:gap-40'>
         <a href={'https://twitter.com/Fatemah____'} target={'_blank'}>
           <AiOutlineTwitter />
         </a>
@@ -73,6 +89,7 @@ export default function Home() {
           <AiFillGithub />
         </a>
       </footer>
+
     </div>
   )
 }
