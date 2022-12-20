@@ -39,8 +39,8 @@ export default function Home() {
                 <span className='cursor-pointer'> resume<HiDownload className={'inline text-base'} /> </span>
                 <div className='invisible group-hover:visible absolute'>
                   <ul className='bg-white bg-opacity-50 dark:bg-opacity-20 font-serif text-xs text-center'>
-                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/1BwhY_DZJDWzp5p1s_eDBoI3zxCmDW0Q4/view?usp=sharing' target={'_blank'}>English</a> </li>
-                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/1CzYLwr5iBd4X9EjIhPk9LDSTAbGLHISg/view?usp=sharing' target={'_blank'}>العربية</a> </li>
+                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/1ndkyNm43CJonM7LmEkp5zopQh29PHpDJ/view?usp=sharing' target={'_blank'}>English</a> </li>
+                    <li className='hover:bg-neutral-400/50 px-2 py-1'> <a href='https://drive.google.com/file/d/11330XbL6Crl4HsrK4-P7MwunBRS9VaYG/view?usp=sharing' target={'_blank'}>العربية</a> </li>
                   </ul>
                 </div>    
               </li>
