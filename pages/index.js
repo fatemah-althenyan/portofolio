@@ -56,7 +56,7 @@ export default function Home() {
               <h3 className='text-xl sm:text-2xl'>Hi there! I'm </h3>
               <Image src={nameIcon} className={" w-24 sm:w-28"} />
             </div>
-            <h2 className='text-2xl font-burtons sm:text-4xl'>Full-Stack Developer | UI/UX Designer</h2>
+            <h2 className='text-3xl font-burtons sm:text-4xl'>Full-Stack Developer | UI/UX Designer</h2>
             <div className='text-base pt-4 leading-7 text-center space-y-3 sm:text-lg'>
               <p> 
               I specialize in Front-end development, creating user-friendly interfaces using HTML, CSS, Bootstrap, JavaScript, and React.js. Additionally, I am keenly interested in UI/UX design and use Figma tool to enhance the overall user experience.
