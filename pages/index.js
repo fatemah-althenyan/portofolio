@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main className=' bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-100'>
-        <div className='p-12 max-w-md mx-auto sm:max-w-2xl lg:max-w-4xl lg:pb-32 xl:max-w-6xl xl:pb-44'>
+        <div className='p-10 max-w-md mx-auto sm:max-w-2xl lg:max-w-4xl lg:pb-32 xl:max-w-6xl xl:pb-44'>
           
           {/*PART #1: navigation bar of pages and dark mode feature.*/}
           <nav className='flex items-center justify-between border border-x-0 border-t-0 border-neutral-700 dark:border-b-white'>
@@ -54,14 +54,13 @@ export default function Home() {
               <h3 className='text-xl sm:text-2xl'>Hi there! I'm </h3>
               <Image src={nameIcon} className={" w-24 sm:w-28"} />
             </div>
-            <h2 className='text-2xl font-burtons sm:text-4xl'> A Full-Stack Developer.</h2>
+            <h2 className='text-2xl font-burtons sm:text-4xl'>Full-Stack Developer | UI/UX Designer</h2>
             <div className='text-base pt-4 leading-7 text-center space-y-3 sm:text-lg'>
               <p> 
-              My focus is on the Front-end side, using HTML, CSS, Bootstrap, JavaScript, and React.js. 
-              I also have experience with Node.js, Express.js, MongoDB, Heroku, and Git in the Back-end.
+              I specialize in Front-end development, creating user-friendly interfaces using HTML, CSS, Bootstrap, JavaScript, and React.js. Additionally, I am keenly interested in UI/UX design and use Figma tool to enhance the overall user experience.
+              In the Back-end, I work with Node.js, Express.js, MongoDB, Heroku, and Git to ensure smooth functionality.
               <br />
-              Besides, I am passionate about analysis using Microsoft Excel, Alteryx, and Tableau programs. Design creativity in branding, logos, and websites. 
-              Using Photoshop and Illustrator programs.
+              Beyond coding, I enjoy analyzing data with Microsoft Excel, Alteryx, and Tableau. Also designing logos and branding using Photoshop and Illustrator.
               </p>
               <p className='text-xs sm:text-sm'>
               In my free time, you'll find me reading history, psychology or self-help books. Drawing with charcoal. 
